@@ -22,7 +22,8 @@ router.post('/', (req, res, next) => {
         options: {
             // This option requests the funds from the transaction
             // once it has been authorized successfully
-            submitForSettlement: false
+            submitForSettlement: false,
+            storeInVault: true
         }
     }, (error, result) => {
         if (result) {
