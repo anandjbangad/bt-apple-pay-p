@@ -24,8 +24,7 @@ router.post('/', (req, res, next) => {
             // once it has been authorized successfully
             submitForSettlement: false,
             storeInVault: true
-        },
-        currencyIsoCode: 'AUD'
+        }
     }, (error, result) => {
         if (result) {
             console.log("printing result");
