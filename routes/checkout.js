@@ -18,7 +18,7 @@ router.post('/', (req, res, next) => {
     const newTransaction = gateway.transaction.sale({
         amount: '1.00',
         paymentMethodNonce: nonceFromTheClient,
-        merchantAccountId: "fat-zebra-ca-aud-nab",
+        merchantAccountId: "fat-zebra-ca-aud",
         options: {
             // This option requests the funds from the transaction
             // once it has been authorized successfully
