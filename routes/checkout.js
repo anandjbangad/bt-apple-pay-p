@@ -19,6 +19,7 @@ router.post('/', (req, res, next) => {
         amount: process.env.AMOUNT,
         paymentMethodNonce: nonceFromTheClient,
         merchantAccountId: process.env.MERCHANT_ACCOUNT_ID,
+        customerId: "Y3VzdG9tZXJfMTY1NjIyMzIwNDQ",
         options: {
             // This option requests the funds from the transaction
             // once it has been authorized successfully
